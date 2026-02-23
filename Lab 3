@@ -1,0 +1,104 @@
+##########
+Lab3A
+##########
+
+print(2 < 5)  # this gives True
+print(10 <= 10)  # this gives True
+x = 10
+print(20 < x)  # this gives False
+print("A" < "a")  # this gives True because the ASCII of "A" is 65 and "a" is 97. The Python interpreter converts the
+# character in ASCII number and then compare.
+print("Monday" > "Tuesday")  # this gives False because the first character of "Monday" (M) has a lower ASCII value
+# as compared to the first character of "Tuesday" (T)
+
+
+10 > 4 and 50 < 100  # True and True is True
+10 < 4 and 50 < 100  # Here first expression is False, the output will be False
+
+10 < 4 or 50 > 100  # False and False is False
+10 > 4 and 50 > 100  # Here first expression is True, the output will be True
+
+10 > 4 # this is True
+not(10 > 4) # this is False
+
+
+x = 0b1110 # 0b represents binary number, decimal 14
+y = 0b1011 # decimal 11
+result = x | y # Bitwise or, result in decimal format
+print(result)
+print(bin(result)) # bin() function converts decimal to binary
+
+# Proof
+# 1110
+# 1011
+# ----
+# 1111
+
+
+# Read two numbers
+number1 = int(input("10: "))
+number2 = int(input("5: "))
+
+# Choose the larger number
+if (number1 > number2):
+    larger_number = number1
+else:
+    larger_number = number2
+
+# Print the result
+print("The larger number is:", larger_number)
+
+x = 10
+
+if x > 5:  # True
+    if x == 6:  # False
+        print("nested: x == 6")
+    elif x == 10:  # True
+        print("nested: x == 10")
+    else:
+        print("nested: else")
+else:
+    print("else")
+
+number1 =int(input("10"))
+number2 =int(input("5"))
+number3 =int(input("1"))
+largest = number1 if number1 > number2 else number2
+
+percentage = int(input("Enter percentage:"))
+if percentage > 90:
+    print("Grade: A, Work of genuine superior quality")
+elif percentage >= 80:
+    print("Grade: B, Upper distribution of passing grades")
+elif percentage >= 71:
+    print("Grade: C, Center of the distribution of passing grades")
+elif percentage >= 65:
+    print("Grade: D, Lower distribution of passing grade")
+else:
+    print("Grade: F, Failing performance. Needs significant improvemnet")
+
+name = input("What's your name? ")
+time = int(input("What time is it? "))
+
+if (time < 1200):
+    print("Hi "+name + ", good morning!")
+if (time < 1800):
+    print("Hi "+name + ", good afternoon!")
+if (time > 1800):
+    print("Hi "+name + ", good evening!")
+
+print("Good Bye")
+
+
+x = 1
+y = 1.0
+z = "1"
+
+if x == y:
+    print("one")
+if y == int(z):
+    print("two")
+elif x == y:
+    print("three")
+else:
+    print("four")
